@@ -31,7 +31,7 @@ export const TickerTable: React.FC<Props> = ({
                     </td>
                     <td>
                         <span>
-                            <Decimal fixed={market.amount_precision} thousSep=",">
+                            <Decimal fixed={market.price_precision} thousSep=",">
                                 {market.last}
                             </Decimal>
                         </span>
@@ -41,21 +41,21 @@ export const TickerTable: React.FC<Props> = ({
                     </td>
                     <td>
                         <span>
-                            <Decimal fixed={market.amount_precision} thousSep=",">
+                            <Decimal fixed={market.price_precision} thousSep=",">
                                 {market.high}
                             </Decimal>
                         </span>
                     </td>
                     <td>
                         <span>
-                            <Decimal fixed={market.amount_precision} thousSep=",">
+                            <Decimal fixed={market.price_precision} thousSep=",">
                                 {market.low}
                             </Decimal>
                         </span>
                     </td>
                     <td>
                         <span>
-                            <Decimal fixed={market.amount_precision} thousSep=",">
+                            <Decimal fixed={2} thousSep=",">
                                 {market.volume}
                             </Decimal>
                         </span>
